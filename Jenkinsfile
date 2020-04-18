@@ -15,7 +15,7 @@ pipeline {
 		}
 			stage ('Deployment') {
 			steps{
-		    sh label: '', script: 'cp -rp "/var/lib/jenkins/workspace/Pipeline_proj@2/target/my-app.war" "/opt/apache-tomcat/webapps"'
+		    sh label: '', script: 'cp -rp "/var/lib/jenkins/workspace/Pipeline_proj/target/my-app.war" "/opt/apache-tomcat/webapps"'
 			}
 		}
 	}
